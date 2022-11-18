@@ -15,3 +15,6 @@ We will improve user experience and basic app features.
 
 ## Design
     Our app's main colors will contain a combination of vibrant, lively yellow and dark gray or navy blue.
+
+### Budget
+Our budged is not too big, because we are students.
