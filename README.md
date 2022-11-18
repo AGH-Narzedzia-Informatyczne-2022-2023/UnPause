@@ -1,5 +1,5 @@
 # UnPause
 Mobile workout tracker.
 
-## Test
-Michal czosnyka
+# Purpose of our app
+Unpause is an app that makes your gym and fitness experience much easier!
