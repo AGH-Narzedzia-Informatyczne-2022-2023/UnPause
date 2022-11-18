@@ -1,4 +1,4 @@
-# UnPause
+# UnPause :copyright:
 Mobile workout tracker.
 
 ## The purpose of our app
@@ -18,3 +18,13 @@ We will improve user experience and basic app features.
 
 ### Budget
 Our budged is not too big, because we are students.
+
+### Meet our team
+| Member | Role |
+| --- | --- |
+| Damian Otto | Founder |
+| Kajetan Sobol | Graphic Designer |
+| Jan Mardyła | IT Specialist and Tester |
+| Michał Czosnyka | Games and Entertainment |
+| Przemysław Domagała | Finances |
+| Jakub Wiechniak | Programmer  |
