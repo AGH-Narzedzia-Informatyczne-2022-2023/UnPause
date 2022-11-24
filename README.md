@@ -1,6 +1,11 @@
 # UnPause :copyright:
 Mobile workout tracker.
 
+# INSTALATION
+```
+pip install -r requirements.txt
+```
+
 ## The purpose of our app
 Unpause is an app that makes your gym and fitness experience much easier!
 
