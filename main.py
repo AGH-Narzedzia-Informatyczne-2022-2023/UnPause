@@ -2,30 +2,41 @@ import kivy
 import random
 
 from kivy.app import App
+from kivy.uix.widget import Widget
 from kivy.uix.button import Button
 from kivy.uix.boxlayout import BoxLayout
+from kivy.uix.screenmanager import ScreenManager, Screen
 
-red = [1, 0, 0, 1]
-green = [0, 1, 0, 1]
-blue = [0, 0, 1, 1]
-purple = [1, 0, 1, 1]
+sm = ScreenManager()
 
 
-class HBoxLayoutExample(App):
+class EntryScreen(Screen):
+    pass
+    # def build(self):
+    #     layout = BoxLayout(padding=10)
+    #     colors = [red, green, blue, purple]
+    #     ez = True
+    #     for i in range(5):
+    #         btn = Button(text="Button #%s" % (i+1),
+    #                      background_color=random.choice(colors)
+    #                      )
+
+    #         layout.add_widget(btn)
+    #     return layout
+
+
+class Functions(Screen):
+    pass
+
+
+class MainApp(App):
     def build(self):
-        layout = BoxLayout(padding=10)
-        colors = [red, green, blue, purple]
-        team = ["Michał", "Janek", "Damian", "Przemek", "Kajtek", "Kuba"]
+        sm = ScreenManager()
+        sm.add_widget(EntryScreen(name='entry'))
+        sm.add_widget(Functions(name='functions'))
 
-        for i in team:
-            btn = Button(text="%s" % (i),
-                         background_color=random.choice(colors)
-                         )
-
-            layout.add_widget(btn)
-        return layout
+        return sm
 
 
-if __name__ == "__main__":
-    app = HBoxLayoutExample()
-    app.run()
+if __name__ == '__main__':
+    MainApp().run()
