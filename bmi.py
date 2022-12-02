@@ -1,0 +1,13 @@
+print ("Kalkulator BMI:")
+print ("Podaj swoją wagę w kg:")
+waga = float(input())
+print ("Podaj swoją wysokość w cm:")
+wys = float(input())
+bmi = waga/pow(wys/100,2)
+print ("Twój wskaźnik  BMI wynosi: ", bmi)
+
+if bmi<18.5: print("Masz niedowagę!")
+if bmi>=18.5 and bmi<25: print("Twoja waga jest w normie!")
+if bmi>=25 and bmi<30: print("Masz nadwagę!")
+if bmi>=30 and bmi<40: print("Masz otyłość!")
+if bmi>=40: print("Masz otyłość drugirgo stopnia!")
