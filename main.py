@@ -14,7 +14,11 @@ class SomeBox(BoxLayout):
     def build(self):
         layout = BoxLayout(padding=10)
         colors = [red, green, blue, purple]
-        ez = True
+        print("To jest coś co wywoła konflikt interesów")
+        for i in range(3):
+            print(i)
+            pass
+        print("tak albo nie")
         for i in range(5):
             btn = Button(text="Button #%s" % (i+1),
                          background_color=random.choice(colors)
@@ -28,8 +32,44 @@ class EntryScreen(Screen):
     pass
 
 
+class SomeBoxes(BoxLayout):
+    def build(self):
+        layout = BoxLayout(padding=10)
+        colors = [red, green, blue, purple]
+        print("To jest coś co wywoła konflikt interesów")
+        for i in range(3):
+            print(i)
+            pass
+        print("tak albo nie")
+        for i in range(5):
+            btn = Button(text="Button #%s" % (i+1),
+                         background_color=random.choice(colors)
+                         )
+
+            layout.add_widget(btn)
+        return layout
+
+
 class Functions(Screen):
     pass
+
+
+class SomeKoox(BoxLayout):
+    def build(self):
+        layout = BoxLayout(padding=10)
+        colors = [red, green, blue, purple]
+        print("To jest coś co wywoła konflikt interesów")
+        for i in range(3):
+            print(i)
+            pass
+        print("tak albo nie")
+        for i in range(5):
+            btn = Button(text="Button #%s" % (i+1),
+                         background_color=random.choice(colors)
+                         )
+
+            layout.add_widget(btn)
+        return layout
 
 
 class MainApp(App):
