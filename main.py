@@ -10,6 +10,10 @@ from kivy.uix.screenmanager import ScreenManager, Screen
 sm = ScreenManager()
 
 
+def funkcja():
+    print("jakub")
+
+
 class EntryScreen(Screen):
     pass
     # def build(self):
