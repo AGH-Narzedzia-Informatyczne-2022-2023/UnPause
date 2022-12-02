@@ -10,23 +10,22 @@ from kivy.uix.screenmanager import ScreenManager, Screen
 sm = ScreenManager()
 
 
-def funkcja():
-    print("jakub")
+class SomeBox(BoxLayout):
+    def build(self):
+        layout = BoxLayout(padding=10)
+        colors = [red, green, blue, purple]
+        ez = True
+        for i in range(5):
+            btn = Button(text="Button #%s" % (i+1),
+                         background_color=random.choice(colors)
+                         )
+
+            layout.add_widget(btn)
+        return layout
 
 
 class EntryScreen(Screen):
     pass
-    # def build(self):
-    #     layout = BoxLayout(padding=10)
-    #     colors = [red, green, blue, purple]
-    #     ez = True
-    #     for i in range(5):
-    #         btn = Button(text="Button #%s" % (i+1),
-    #                      background_color=random.choice(colors)
-    #                      )
-
-    #         layout.add_widget(btn)
-    #     return layout
 
 
 class Functions(Screen):
