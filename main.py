@@ -9,7 +9,6 @@ from kivy.uix.screenmanager import ScreenManager, Screen
 
 sm = ScreenManager()
 
-
 class EntryScreen(Screen):
     pass
     # def build(self):
@@ -36,6 +35,7 @@ class MainApp(App):
         sm.add_widget(Functions(name='functions'))
 
         return sm
+
 
 
 if __name__ == '__main__':
